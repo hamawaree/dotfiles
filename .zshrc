@@ -141,3 +141,9 @@ function peco-todoist-close() {
 }
 zle -N peco-todoist-close
 bindkey "^ttc" peco-todoist-closec
+# cdしたらls
+cdls ()
+{
+    \cd "$@" && ls
+}
+alias cd="cdls"
